@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareIQ - AI-Powered Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <span class="logo-text">CareIQ</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#symptom-checker" class="nav-link">Symptom Checker</a>
+                <a href="#providers" class="nav-link">Find Providers</a>
+                <a href="#technology" class="nav-link">Technology</a>
+            </div>
+
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">AI-Powered Healthcare<br>At Your Fingertips</h1>
+                    <p class="hero-description">
+                        Experience the future of healthcare with CareIQ - your intelligent medical companion that provides symptom analysis, connects you with healthcare providers, and empowers you with smart health management tools.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="primary-btn">Start Symptom Check</button>
+                        <button class="secondary-btn">Find Doctors Nearby</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8148e960-1815-4e68-8159-80211bf22da2.png" alt="Modern healthcare interface showing AI doctor consultation on tablet with medical charts and health metrics dashboard" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Revolutionary Healthcare Features</h2>
+                    <p>Designed to transform how you access and manage healthcare services</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon health-gradient">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Symptom Analysis</h3>
+                        <p>Advanced algorithms analyze your symptoms and suggest possible conditions with natural language processing.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon ai-gradient">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Provider Matching</h3>
+                        <p>Find the best healthcare providers near you with intelligent location-based recommendations.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon green-gradient">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Smart Scheduling</h3>
+                        <p>Book appointments seamlessly with integrated calendar and reminder systems.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon purple-gradient">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Health Records</h3>
+                        <p>Secure digital storage for your medical history, prescriptions, and test results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Symptom Checker Section -->
+        <section id="symptom-checker" class="symptom-checker">
+            <div class="container">
+                <div class="symptom-grid">
+                    <div class="symptom-form-container">
+                        <h2>AI-Powered Symptom Analysis</h2>
+                        <p class="symptom-description">
+                            Describe your symptoms in plain language and let our advanced AI algorithms analyze potential conditions. Get intelligent suggestions and guidance on next steps.
+                        </p>
+                        
+                        <div class="symptom-form">
+                            <div class="form-group">
+                                <label>Describe your symptoms</label>
+                                <textarea 
+                                    class="symptom-input"
+                                    placeholder="Example: I've had a persistent headache for 3 days with occasional dizziness and sensitivity to light..."
+                                ></textarea>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Duration</label>
+                                    <select class="form-select">
+                                        <option>Less than 24 hours</option>
+                                        <option>1-3 days</option>
+                                        <option>3-7 days</option>
+                                        <option>More than 1 week</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Severity</label>
+                                    <select class="form-select">
+                                        <option>Mild</option>
+                                        <option>Moderate</option>
+                                        <option>Severe</option>
+                                        <option>Emergency</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button class="analyze-btn">Analyze Symptoms</button>
+                        </div>
+                    </div>
+
+                    <div class="results-container">
+                        <div class="results-card">
+                            <h3>Analysis Results</h3>
+                            <div class="results-content" id="analysis-results">
+                                <div class="results-placeholder">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <p>Enter your symptoms to get AI-powered analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthcare Providers Section -->
+        <section id="providers" class="providers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find Healthcare Providers</h2>
+                    <p>Connect with trusted medical professionals in your area</p>
+                </div>
+
+                <div class="providers-grid">
+                    <div class="providers-form">
+                        <h3>Search Nearby Providers</h3>
+                        
+                        <div class="form-group">
+                            <label>Specialty</label>
+                            <select class="form-select">
+                                <option>General Practitioner</option>
+                                <option>Cardiologist</option>
+                                <option>Dermatologist</option>
+                                <option>Neurologist</option>
+                                <option>Pediatrician</option>
+                                <option>Orthopedic</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Location</label>
+                            <div class="location-input">
+                                <input type="text" placeholder="Enter your location">
+                                <button class="location-btn">
+                                    <i class="fas fa-location-arrow"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button class="find-providers-btn">Find Providers</button>
+                    </div>
+
+                    <div class="providers-map">
+                        <div class="map-container">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7562eaa-036b-40b8-8d09-98f844d41f37.png" alt="Interactive map interface showing healthcare provider locations with pins and ratings in urban area" />
+                            <p>Interactive map showing nearby healthcare facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section id="technology" class="technology">
+        </section>
+
+        <!-- Future Scope Section -->
+        <section id="future-scope" class="future-scope">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <h2>Future Innovations</h2>
+                    <p>Exciting developments coming to CareIQ</p>
+                </div>
+
+                <div class="future-grid">
+                    <div class="future-card" style="margin: 0 1rem;">
+                        <div class="future-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Multilingual Support</h3>
+                        <p>Expanding accessibility with support for multiple languages and regional healthcare systems.</p>
+                    </div>
+
+                    <div class="future-card" style="margin: 0 1rem;">
+                        <div class="future-icon">
+                            <i class="fas fa-watch"></i>
+                        </div>
+                        <h3>Wearable Integration</h3>
+                        <p>Real-time health monitoring through integration with smartwatches and fitness trackers.</p>
+                    </div>
+
+                    <div class="future-card" style="margin: 0 1rem;">
+                        <div class="future-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Blockchain Security</h3>
+                        <p>Enhanced data security with blockchain technology for medical records and transactions.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <span class="logo-text">CareIQ</span>
+                    </div>
+                    <p>Making healthcare smarter, faster, and more human-centric for everyone, everywhere.</p>
+                </div>
+
+
+
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#symptom-checker">Symptom Checker</a></li>
+                        <li><a href="#providers">Doctor Finder</a></li>
+                        <li><a href="#technology">Health Records</a></li>
+                        <li><a href="#future-scope">Medication Reminders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p>
+                          <i class="fas fa-envelope"></i>
+                          <a href="mailto:careiqofficial@gmail.com">careiqofficial@gmail.com</a>
+                        </p>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2025 CareIQ. All rights reserved. AI-powered healthcare solutions.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script type="module"></script>
+      import { createRoot } from 'https://unpkg.com/react-dom@18/umd/react-dom.development.js';
+      import { Hero, SymptomChecker } from './react.js';t-dom.development.js" crossorigin></script>
+    <script type="module">
+      const heroRoot = document.getElementById('hero-root');m@18/umd/react-dom.development.js';
+      const symptomCheckerRoot = document.getElementById('symptom-checker-root');
+
+      if (heroRoot) {= document.getElementById('hero-root');
+        const root = ReactDOM.createRoot(heroRoot);tById('symptom-checker-root');
+        root.render(React.createElement(Hero));
+      }f (heroRoot) {
+        const root = ReactDOM.createRoot(heroRoot);
+      if (symptomCheckerRoot) {eElement(Hero));
+        const root = ReactDOM.createRoot(symptomCheckerRoot);
+        root.render(React.createElement(SymptomChecker));
+      }f (symptomCheckerRoot) {
+    </script> root = ReactDOM.createRoot(symptomCheckerRoot);
+</body> root.render(React.createElement(SymptomChecker));
+</html>
+    </script>
+</body>
+</html>
